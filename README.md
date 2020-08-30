@@ -8,6 +8,6 @@ Node web app build in HTML CSS and Javascript
 
 1. clone the repo in your local and check in to root dir
 2. run npm install
-3. to run app in development mode run 'npm run buildDev'
-4. to run the app in production mode 'npm run buildProd'
+3. to run app in development mode run 'npm run startdDev'
+4. to run the app in production mode 'npm run startProd'
 
