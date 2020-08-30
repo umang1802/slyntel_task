@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rasa:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <title>SLYNTEL- sales intelligence</title>
+</head>
+<body>
+    <!--Fixed navigation bar using bootstrap 4-->
+    <header>
+        <nav>
+            <nav class="navbar fixed-top navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                <img src="../assets/img/Group 2159.svg" class="d-inline-block align-top" alt="Slyntel-logo">
+                </a>
+                <span class="navbar-text">
+                    <a id="text-white">BOOK A DEMO</a>
+                </span>
+            </nav>
+        </nav>
+        <div class="header-cover-image">
+        </div>
+    </header>
+    <!-- Side floating navigation menu may not be responsive break point needs work -->
+    <!-- smooth scrolling enabled and menu items linked to respective sections -->
+    <!-- will be hidden on small devices -->
+    <div class="floating-nav-fixed d-none d-sm-block">
+        <div class="floating-nav-content">
+            <ul>
+                <li>
+                    <a href="#sales-intelligence-intro" class="floating-nav-main-heading">
+                        What is Sales Intelligence?
+                    </a>
+                    <ul>
+                        <li class="floating-nav-indented-li">
+                            <a href="#sales-intelligence-misconceptions" class="floating-nav-sub-heading">
+                                Misconceptions About Sales Intelligence
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#sales-intelligence-building-block" class="floating-nav-main-heading">
+                        The Building Blocks of Sales Intelligence
+                    </a>
+                    <ul>
+                        <li class="floating-nav-indented-li">
+                            <a href="#sales-intelligence-organizational-charts" class="floating-nav-sub-heading">
+                                Organizational Charts
+                            </a>
+                        </li>
+                        <li class="floating-nav-indented-li">
+                            <a href="#sales-intelligence-job-post" class="floating-nav-sub-heading">
+                                Job Posting Alerts
+                            </a>
+                        </li>
+                        <li class="floating-nav-indented-li">
+                            <a href="#sales-intelligence-firmographics" class="floating-nav-sub-heading">
+                                Firmographics
+                            </a>
+                        </li>
+                        <li class="floating-nav-indented-li">
+                            <a href="#sales-intelligence-psychograpgics" class="floating-nav-sub-heading">
+                                Psychographics
+                            </a>
+                        </li>
+                        <li class="floating-nav-indented-li">
+                            <a href="#sales-intelligence-tech-stack" class="floating-nav-sub-heading">
+                                Psychographics
+                            </a>
+                        </li>
+                        <li class="floating-nav-indented-li">
+                            <a href="#" class="floating-nav-sub-heading">
+                                Tech Stacks & Technographics
+                            </a>
+                        </li>
+                        <li class="floating-nav-indented-li">
+                            <a href="#" class="floating-nav-sub-heading">
+                                Contract Renewal Alerts
+                            </a>
+                        </li>
+                        <li class="floating-nav-indented-li">
+                            <a href="#" class="floating-nav-sub-heading">
+                                Company Updates
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#sales-intelligence-benifits" class="floating-nav-main-heading">
+                        The Benefits of Sales Intelligence: How Can Sales Intelligence Impact My Company?
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#sales-intelligence-actionable" class="floating-nav-main-heading">
+                        Sales Intelligence: How Actionable Is It, Really?
+                    </a>
+                    <ul>
+                        <li class="floating-nav-indented-li">
+                            <a href="#sales-intelligence-buyer-intent" class="floating-nav-sub-heading">
+                                Buyer Intent
+                            </a>
+                        </li>
+                        <li class="floating-nav-indented-li">
+                            <a href="#sales-intelligence-prospenity" class="floating-nav-sub-heading">
+                                Propensity Score
+                            </a>
+                        </li>
+                        <li class="floating-nav-indented-li">
+                            <a href="#" class="floating-nav-sub-heading">
+                                Lead Score
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#sales-intelligence-challenges" class="floating-nav-main-heading">
+                        Challenges of Using Sales Intelligence & How to Address Them
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#sales-intelligence-marketting-vs-sales" class="floating-nav-main-heading">
+                        Marketing Intelligence vs Sales Intelligence
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#sales-intelligence-future" class="floating-nav-main-heading">
+                        Future of Sales Intelligence
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    <!--intro section-->
+    <section class="section-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-8">
+                    <div class="section-heading">
+                        <!-- given id because this style is unique -->
+                        <h1 id="sales-intelligence-main-heading">
+                            Sales Intelligence: A Guide to Smart Selling
+                        </h1>
+                        <p class="section-content-text">
+                            If you asked someone what “sales intelligence” was a decade ago, they’d have mostly likely drawn a blank to your question. Sales intelligence as we know it today simply did not exist back then. While it was a requirement that sales teams of the past were yearning to find a solution for (as they do today), the technology to support the requirement was not easy to build. 
+                        </p>
+                        <p class="section-content-text">
+                            Today, thanks to the thriving universe of SaaS products and the technological leaps that we’ve made, sales intelligence is powerful and accessible—enabling sales teams to sell better, faster, and with more insight than ever before. But what is sales intelligence, really? What are the building blocks that it is made up of, how can it impact your company, and how will it evolve in the future? That’s exactly what we’ll be exploring today. Let’s dive right into it.
+                        </p>
+                        <p class="section-content-text">
+                            But what is sales intelligence, really? What are the building blocks that it is made up of, how can it impact your company, and how will it evolve in the future? That’s exactly what we’ll be exploring today. Let’s dive right into it.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sections with grey background -->
+    <!-- have used bootstrap grids for responsiveness -->
+    <section class="section-grey" id="sales-intelligence-intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-8">
+                    <div class="section-content" >
+                        <h2 >
+                            What is Sales Intelligence?
+                        </h2>
+                        <p class="section-content-text">
+                            Sales intelligence, in a nutshell, refers to the information and insights that companies can have about their prospective buyers. 
+                        </p>
+                        <p class="section-content-text">
+                            As a sales representative, manager, or VP, you’d want to have the most up-to-date, relevant, and personalized information about your target account’s users, buyers, and decision-makers. The more information you have about your prospects, the more are your chances of closing the sale, just because of that fact that you were able to accurately determine when they want your product/service and why they should want it.
+                        </p>
+                        <p class="section-content-text">
+                            Sales intelligence helps you find the right kind of prospects for your company, enables you to reach them on the right platform, build a pitch that address their exact pain points, and shorten the time that it takes to close the deal. 
+                        </p>
+                        <p class="section-content-text">
+                            While that should give you a well-rounded idea of what sales intelligence is, we often find that several other things are often misconstrued as sales intelligence while they really aren’t. Let’s take a closer look at what those are.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+            <div class="row" id="sales-intelligence-misconceptions">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-8">
+                    <div class="section-heading">
+                        <h2>
+                            Misconceptions About Sales Intelligence
+                        </h2>
+                        <p class="section-content-text">
+                            Several companies out there provide leads or contact information to sales teams and call themselves sales intelligence firms. There are also plenty of tools out there that allow companies to track basic (or perhaps slightly more advanced) sales metrics like Customer Acquisition Cost (CAC), Customer Lifetime Value (CLV), average deal size, etc. on “sales intelligence dashboards”. 
+                        </p>
+                        <p class="section-content-text">
+                            While these are important facts and metrics that sales teams in any organization can benefit from, they aren’t really sales intelligence. Let’s take a look at the elements that make up sales intelligence, and the benefits of using it. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-white" id="sales-intelligence-building-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-8">
+                    <div class="section-content">
+                        <h2>
+                            The Building Blocks of Sales Intelligence
+                        </h2>
+                        <p class="section-content-text">
+                            Now that we’ve spoken about what sales intelligence is all about and how it can benefit your company, let’s dive into the different components that make up sales intelligence.
+                            Let’s break this down and take a deeper look at what each of these things mean. 
+                        </p>
+                        <ol class="sales-intelligence-list">
+                            <li start="1">
+                                Organizational Charts
+                            </li>
+                            <li>
+                                Job Posting Alerts
+                            </li>
+                            <li>
+                                Firmographics
+                            </li>
+                            <li>
+                                Psychographics
+                            </li>
+                            <li>
+                                Tech Stacks & Technographics
+                            </li>
+                            <li>
+                                Contract Renewal Alerts
+                            </li>
+                            <li>
+                                Company Updates
+                            </li>
+                        </ol>
+                        <p class="section-content-text">
+                            Let’s break this down and take a deeper look at what each of these things mean.
+                        </p>
+                    </div>
+                    <div class="section-content" >
+                       <div class="accordian" id="sales-intelligence-organizational-charts">
+                            <div class="accordian-heading">
+                                <svg class="accordian-sign" xmlns="http://www.w3.org/2000/svg" width="12.243" height="20.243" viewBox="0 0 12.243 20.243"><defs><style>.a{fill:none;stroke:#929cb7;stroke-linecap:round;stroke-width:3px;}</style></defs><path class="a" d="M-1,0-9,8l8,8" transform="translate(1.121 18.121) rotate(180)"/></svg>
+                                <h3>Organizational Charts</h3>
+                            </div>
+                            <div class="accordian-content">
+                                <h5>
+                                    What are Organizational Charts?
+                                </h5>
+                                <p class="section-content-text">
+                                    Organizational charts, often alternatively referred to as organigrams or organograms, are a visual representation of a company’s structure. This chart enlists the employees of an organization and maps each of them out with respect to other employees within the organization—may it be peers, subordinates, or reporting managers.
+                                </p>
+                                <div class="conetent-image">
+                                    <img class="img-fluid" src="../assets/img/Organization-charts.png" alt="organization charts" />
+                                </div>
+                                <h5>
+                                    How Can Organizational Charts Help My Company and Sales Team?
+                                </h5>
+                                <p class="section-content-text">
+                                    Organograms can help you gain a fair understanding of how the reporting structure in an organization works. In the context of sales intelligence, they can give you insights about the exact person you need to reach out to when you want to close down a sale. They also allow you to understand who your product/service’s users are going to be in that organization, and if you have a product that can help multiple teams or divisions of a company, it paves the path for you to cross-sell and upsell your product across different functions of the company.
+                                </p>
+                            </div>
+                       </div>
+                       <hr />
+                        <div class="accordian" id="sales-intelligence-job-post">
+                            <div class="accordian-heading">
+                                <svg class="accordian-sign" xmlns="http://www.w3.org/2000/svg" width="12.243" height="20.243" viewBox="0 0 12.243 20.243"><defs><style>.a{fill:none;stroke:#929cb7;stroke-linecap:round;stroke-width:3px;}</style></defs><path class="a" d="M-1,0-9,8l8,8" transform="translate(1.121 18.121) rotate(180)"/></svg>
+                                <h3>Job Posting Alerts</h3>
+                            </div>
+                            <div class="accordian-content">
+                                <h5>
+                                    What are Posting Alerts?
+                                </h5>
+                                <p class="section-content-text">
+                                    Organizational charts, often alternatively referred to as organigrams or organograms, are a visual representation of a company’s structure. This chart enlists the employees of an organization and maps each of them out with respect to other employees within the organization—may it be peers, subordinates, or reporting managers.
+                                </p>
+                                <p class="section-content-text">
+                                    Organograms can help you gain a fair understanding of how the reporting structure in an organization works. In the context of sales intelligence, they can give you insights about the exact person you need to reach out to when you want to close down a sale. They also allow you to understand who your product/service’s users are going to be in that organization, and if you have a product that can help multiple teams or divisions of a company, it paves the path for you to cross-sell and upsell your product across different functions of the company.
+                                </p>
+                            </div>
+                        </div>
+                    <hr/>
+                    <div class="accordian" id="sales-intelligence-firmographics">
+                        <div class="accordian-heading">
+                            <svg class="accordian-sign" xmlns="http://www.w3.org/2000/svg" width="12.243" height="20.243" viewBox="0 0 12.243 20.243"><defs><style>.a{fill:none;stroke:#929cb7;stroke-linecap:round;stroke-width:3px;}</style></defs><path class="a" d="M-1,0-9,8l8,8" transform="translate(1.121 18.121) rotate(180)"/></svg>
+                            <h3>Firmographics</h3>
+                        </div>
+                        <div class="accordian-content">
+                            <h5>
+                                What are Firmographics?
+                            </h5>
+                            <p class="section-content-text">
+                                As the name suggests, job posting alerts are notifications about a job listing that are put up by a client, target company, or potential buyer that can benefit from your product/service.
+                            </p>
+                            <h5>
+                                How Can Firmographics Help My Company and Sales Team?
+                            </h5>
+                            <p class="section-content-text">
+                                Firmographics allow you to segment your target accounts and prospects based on several criteria, and provide you with a much deeper understanding of your target markets. They also aid in gathering industry trends and build vertical-specific messaging and pitches to improve conversions.
+                            </p>
+                            <p class="section-content-text">
+                                Organograms can help you gain a fair understanding of how the reporting structure in an organization works. In the context of sales intelligence, they can give you insights about the exact person you need to reach out to when you want to close down a sale. They also allow you to understand who your product/service’s users are going to be in that organization, and if you have a product that can help multiple teams or divisions of a company, it paves the path for you to cross-sell and upsell your product across different functions of the company.
+                            </p>
+                            <div class="conetent-image">
+                                <img class="img-fluid" src="../assets/img/Firmographics.png" alt="organization charts" />
+                            </div>
+                            <p class="section-content-text">
+                                While firmographics are a great way to obtain basic knowledge of a company, it is recommended that your sales force doesn’t rely solely on this information since it doesn’t provide tactical insights into how a particular organization functions. Coupling firmographic data with other types of information and insights on this list will truly empower your team to close down sales more efficiently.
+                            </p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="accordian" id="sales-intelligence-psychograpgics">
+                        <div class="accordian-heading">
+                            <svg class="accordian-sign" xmlns="http://www.w3.org/2000/svg" width="12.243" height="20.243" viewBox="0 0 12.243 20.243"><defs><style>.a{fill:none;stroke:#929cb7;stroke-linecap:round;stroke-width:3px;}</style></defs><path class="a" d="M-1,0-9,8l8,8" transform="translate(1.121 18.121) rotate(180)"/></svg>
+                            <h3>Psychographics</h3>
+                        </div>
+                        <div class="accordian-content">
+                            <h5>
+                                What are Psychographics?
+                            </h5>
+                            <p class="section-content-text">
+                                Psychographics, simply put, is the segmentation and study of consumers based on their activities, interests, and opinions (AIOs).
+                            </p>
+                            <h5>
+                                How Can Technographics Help My Company and Sales Team?
+                            </h5>
+                            <p class="section-content-text">
+                                Consumer behavior is diverse, so content and pitches that your team builds to appeal to one client might not really be well-received by another. Psychographics allow you to customize your content and outreach based on your clients’ AIOs—and this information can be a gamechanger when it comes to capturing your prospects’ attention.
+                            </p>
+                            <p class="section-content-text">
+                                Organograms can help you gain a fair understanding of how the reporting structure in an organization works. In the context of sales intelligence, they can give you insights about the exact person you need to reach out to when you want to close down a sale. They also allow you to understand who your product/service’s users are going to be in that organization, and if you have a product that can help multiple teams or divisions of a company, it paves the path for you to cross-sell and upsell your product across different functions of the company.
+                            </p>
+                            <div class="conetent-image">
+                                <img class="img-fluid" src="../assets/img/Psychographics.svg" alt="organization charts" />
+                            </div>
+                            <p class="section-content-text">
+                                While firmographics are a great way to obtain basic knowledge of a company, it is recommended that your sales force doesn’t rely solely on this information since it doesn’t provide tactical insights into how a particular organization functions. Coupling firmographic data with other types of information and insights on this list will truly empower your team to close down sales more efficiently.
+                            </p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="accordian" id="sales-intelligence-tech-stack">
+                        <div class="accordian-heading">
+                            <svg class="accordian-sign" xmlns="http://www.w3.org/2000/svg" width="12.243" height="20.243" viewBox="0 0 12.243 20.243"><defs><style>.a{fill:none;stroke:#929cb7;stroke-linecap:round;stroke-width:3px;}</style></defs><path class="a" d="M-1,0-9,8l8,8" transform="translate(1.121 18.121) rotate(180)"/></svg>
+                            <h3>Tech Stacks & Technographics</h3>
+                        </div>
+                        <div class="accordian-content">
+                            <h5>
+                                What are Tech Stacks & Technographics?
+                            </h5>
+                            <div class="conetent-image">
+                                <img class="img-fluid" src="../assets/img/Tech.png" alt="Technographics" />
+                            </div>
+                            <p class="section-content-text">
+                                Technographics can provide a wealth of information to your company’s sales force—starting from something as simple as understanding the organizations out there that use your competitor’s product/service over yours; thus giving you a list of leads that you can reach out to right away, effectively.
+                            </p>
+                            <p class="section-content-text">
+                                Beyond that, technographics can also help you understand the requirements of a company, and also help you build a more telling pitch about how your product will fit in the ecosystem of a prospect’s tech stack, especially if you’re selling software that has a lot of integrations.
+                            </p>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="accordian">
+                        <div class="accordian-heading">
+                            <svg class="accordian-sign" xmlns="http://www.w3.org/2000/svg" width="12.243" height="20.243" viewBox="0 0 12.243 20.243"><defs><style>.a{fill:none;stroke:#929cb7;stroke-linecap:round;stroke-width:3px;}</style></defs><path class="a" d="M-1,0-9,8l8,8" transform="translate(1.121 18.121) rotate(180)"/></svg>
+                            <h3>Contract Renewal Alerts</h3>
+                        </div>
+                        <!-- <div class="accordian-content">
+                            <h5>
+                                What are Tech Stacks & Technographics?
+                            </h5>
+                            <div class="conetent-image">
+                                <img class="img-fluid" src="../assets/img/Tech.png" alt="Technographics" />
+                            </div>
+                            <p class="section-content-text">
+                                Technographics can provide a wealth of information to your company’s sales force—starting from something as simple as understanding the organizations out there that use your competitor’s product/service over yours; thus giving you a list of leads that you can reach out to right away, effectively.
+                            </p>
+                            <p class="section-content-text">
+                                Beyond that, technographics can also help you understand the requirements of a company, and also help you build a more telling pitch about how your product will fit in the ecosystem of a prospect’s tech stack, especially if you’re selling software that has a lot of integrations.
+                            </p>
+                        </div> -->
+                    </div>
+                    <hr />
+                    <div class="accordian">
+                        <div class="accordian-heading">
+                            <svg class="accordian-sign" xmlns="http://www.w3.org/2000/svg" width="12.243" height="20.243" viewBox="0 0 12.243 20.243"><defs><style>.a{fill:none;stroke:#929cb7;stroke-linecap:round;stroke-width:3px;}</style></defs><path class="a" d="M-1,0-9,8l8,8" transform="translate(1.121 18.121) rotate(180)"/></svg>
+                            <h3>Company Updates</h3>
+                        </div>
+                        <!-- <div class="accordian-content">
+                            <h5>
+                                What are Tech Stacks & Technographics?
+                            </h5>
+                            <div class="conetent-image">
+                                <img class="img-fluid" src="../assets/img/Tech.png" alt="Technographics" />
+                            </div>
+                            <p class="section-content-text">
+                                Technographics can provide a wealth of information to your company’s sales force—starting from something as simple as understanding the organizations out there that use your competitor’s product/service over yours; thus giving you a list of leads that you can reach out to right away, effectively.
+                            </p>
+                            <p class="section-content-text">
+                                Beyond that, technographics can also help you understand the requirements of a company, and also help you build a more telling pitch about how your product will fit in the ecosystem of a prospect’s tech stack, especially if you’re selling software that has a lot of integrations.
+                            </p>
+                        </div> -->
+                    </div>
+                    <hr />
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-grey" id="sales-intelligence-benifits">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-8">
+                    <div class="section-content">
+                        <h2>
+                            The Benefits of Sales Intelligence: How Can Sales Intelligence Impact My Company?
+                        </h2>
+                        <p class="section-content-text">
+                            Right off the bat, sales intelligence can: 
+                        </p>
+                        <ul class="sales-intelligence-list">
+                            <li>
+                                Increase the likelihood of winning a deal 
+                            </li>
+                            <li>
+                                Improve your team’s lead-to-deal conversion rate
+                            </li>
+                            <li>
+                                Decrease the duration of your sales cycle
+                            </li>
+                            <li>
+                                Alert you when new sales opportunities arise
+                            </li>
+                            <li>
+                                Help create pitches that appeal the most to the prospect
+                            </li>
+                            <li>
+                                Save time while enriching lead information 
+                            </li>
+                            <li>
+                                Provide valuable metrics that will help you determine buyer intent, propensity, etc
+                            </li>
+                        </ul>
+                        <p class="section-content-text">
+                            And while all that’s great, one question that may linger in your mind is, “how actionable is sales intelligence, really?”. Allow us to answer that. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-white" id="sales-intelligence-actionable">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-8">
+                    <div class="section-content">
+                        <h2>
+                            <p>Sales Intelligence:</p> 
+                            <p>How Actionable Is It, Really?</p>
+                        </h2>
+                        <p class="section-content-text">
+                            As we saw earlier, sales intelligence is all about improving the efficiency with which your sales force operates—in other words, increasing conversion rates while reducing the time it takes to garner more prospects and close deals. Having raw, unprocessed data can be of no aid to your business if these are the goals that your team sets out to achieve. Sales intelligence, however, isn’t unprocessed data; it’s a collection of data-driven information and contextual insights that are built with the sole intention of helping your organization’s sales force. Let’s take a deeper look at some examples of actionable sales intelligence, how it is calculated, and how it can help your team sell better.
+                        </p>
+                        <p class="section-content-text">
+                            Sales intelligence, however, isn’t unprocessed data; it’s a collection of data-driven information and contextual insights that are built with the sole intention of helping your organization’s sales force. Let’s take a deeper look at some examples of actionable sales intelligence, how it is calculated, and how it can help your team sell better.
+                        </p>
+                    </div>
+                    <div class="accordian" id="sales-intelligence-buyer-intent">
+                        <div class="accordian-heading">
+                            <svg class="accordian-sign" xmlns="http://www.w3.org/2000/svg" width="12.243" height="20.243" viewBox="0 0 12.243 20.243"><defs><style>.a{fill:none;stroke:#929cb7;stroke-linecap:round;stroke-width:3px;}</style></defs><path class="a" d="M-1,0-9,8l8,8" transform="translate(1.121 18.121) rotate(180)"/></svg>
+                            <h3>Buyer Intent</h3>
+                        </div>
+                        <!-- <div class="accordian-content">
+                            <h5>
+                                What are Tech Stacks & Technographics?
+                            </h5>
+                            <div class="conetent-image">
+                                <img class="img-fluid" src="../assets/img/Tech.png" alt="Technographics" />
+                            </div>
+                            <p class="section-content-text">
+                                Technographics can provide a wealth of information to your company’s sales force—starting from something as simple as understanding the organizations out there that use your competitor’s product/service over yours; thus giving you a list of leads that you can reach out to right away, effectively.
+                            </p>
+                            <p class="section-content-text">
+                                Beyond that, technographics can also help you understand the requirements of a company, and also help you build a more telling pitch about how your product will fit in the ecosystem of a prospect’s tech stack, especially if you’re selling software that has a lot of integrations.
+                            </p>
+                        </div> -->
+                    </div>
+                    <hr />
+                    <div class="accordian" id="sales-intelligence-prospenity">
+                        <div class="accordian-heading">
+                            <svg class="accordian-sign" xmlns="http://www.w3.org/2000/svg" width="12.243" height="20.243" viewBox="0 0 12.243 20.243"><defs><style>.a{fill:none;stroke:#929cb7;stroke-linecap:round;stroke-width:3px;}</style></defs><path class="a" d="M-1,0-9,8l8,8" transform="translate(1.121 18.121) rotate(180)"/></svg>
+                            <h3>Propensity Score</h3>
+                        </div>
+                        <!-- <div class="accordian-content">
+                            <h5>
+                                What are Tech Stacks & Technographics?
+                            </h5>
+                            <div class="conetent-image">
+                                <img class="img-fluid" src="../assets/img/Tech.png" alt="Technographics" />
+                            </div>
+                            <p class="section-content-text">
+                                Technographics can provide a wealth of information to your company’s sales force—starting from something as simple as understanding the organizations out there that use your competitor’s product/service over yours; thus giving you a list of leads that you can reach out to right away, effectively.
+                            </p>
+                            <p class="section-content-text">
+                                Beyond that, technographics can also help you understand the requirements of a company, and also help you build a more telling pitch about how your product will fit in the ecosystem of a prospect’s tech stack, especially if you’re selling software that has a lot of integrations.
+                            </p>
+                        </div> -->
+                    </div>
+                    <hr />
+                    <div class="accordian" id="sales-intelligence-organizational-charts">
+                        <div class="accordian-heading">
+                            <svg class="accordian-sign" xmlns="http://www.w3.org/2000/svg" width="12.243" height="20.243" viewBox="0 0 12.243 20.243"><defs><style>.a{fill:none;stroke:#929cb7;stroke-linecap:round;stroke-width:3px;}</style></defs><path class="a" d="M-1,0-9,8l8,8" transform="translate(1.121 18.121) rotate(180)"/></svg>
+                            <h3>Lead Score</h3>
+                        </div>
+                        <div class="accordian-content">
+                            <h5>
+                                What are Organizational Charts?
+                            </h5>
+                            <p class="section-content-text">
+                                While lead scoring has become much more of a marketing function in today’s world, thanks to advances in technology that have helped automate the process, it is still a valuable metric that can help sales teams prioritize high intent leads over others. Lead scoring is typically calculated by tracking the number of times a customer has interacted or engaged with your company’s website, content, emails, or employees, but can also be formulated using everything that we’ve discussed in this post thus far.
+                            </p>
+                            <p class="section-content-text">
+                                Lead scoring is typically calculated by tracking the number of times a customer has interacted or engaged with your company’s website, content, emails, or employees, but can also be formulated using everything that we’ve discussed in this post thus far.
+                            </p>
+                            <div class="conetent-image">
+                                <img class="img-fluid" src="../assets/img/Lead-score.png" alt="Lead Score Image" />
+                            </div>
+                            <p class="section-content-text">
+                                A prospect with a high lead score will have a better likelihood of purchasing your product compared to your other leads. Lead scores can also be valuable while identifying “super-users” or “super-leads” that can eventually become your brand’s promoters. Phew! We’ve finally come to the end of all the elements that constitute sales intelligence as a whole, and how it can enable your sellers to be better at what they do best. However, no technology is perfect, and sales intelligence is no exception. Here are some of the common problems that brands run into while using sales intel to improve their growth.
+                            </p>
+                            <p class="section-content-text">
+                                Phew! We’ve finally come to the end of all the elements that constitute sales intelligence as a whole, and how it can enable your sellers to be better at what they do best. However, no technology is perfect, and sales intelligence is no exception. Here are some of the common problems that brands run into while using sales intel to improve their growth.
+                            </p>
+                            <p class="section-content-text">
+                                However, no technology is perfect, and sales intelligence is no exception. Here are some of the common problems that brands run into while using sales intel to improve their growth.
+                            </p>
+                        </div>
+                   </div>
+                   <hr />
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-grey" id="sales-intelligence-challenges">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-8">
+                    <div class="section-content">
+                        <h2>
+                            Challenges of Using Sales Intelligence & How to Address Them
+                        </h2>
+                        <h3>Trustworthiness of Data</h3>
+                        <p class="section-content-text">
+                            Like it is the case with any other data-powered business solution, the impact and usefulness of sales intelligence is directly reliant on the accuracy, depth, and up-to-dateness of the information presented to your brand. “Bad data” that is out-of-date, incorrect, or wrongly attributed can affect the decisions that your sales force makes, and can negatively impact your sales as well. However, this can be easily tackled by:
+                        </p>
+                        <ul class="sales-intelligence-list">
+                            <li>
+                                Ensuring that your information is gathered from a reliable source 
+                            </li>
+                            <li>
+                                Always having a timestamp that represents when the information was updated last
+                            </li>
+                            <li>
+                                Manually verifying samples of data to see whether they meet quality standards
+                            </li>
+                        </ul>
+                        <p class="section-content-text">
+                            Good sales intelligence software has all these in place, so this shouldn’t really be a can of worms as long as you buy your information from a reputable sales intel company.
+                        </p>
+                        <h3>Return-on-Investment</h3>
+                        <p class="section-content-text">
+                            Sales intelligence is, by all means, valuable information for any company or team, and it isn’t inexpensive by any standards. But that doesn’t mean that it isn’t useful for your company. Sales intelligence can help you gain insights that will save you thousands of man-hours and help million dollar sales that might not have been possible without it—but keep in mind that it works best for companies that have large average deal values.
+                        </p>
+                        <p class="section-content-text">
+                            If you’re a smaller brand that’s just setting out selling software, invest your sales funds wisely. An early-stage startup with less than $20k in ARR might not be able to file ROIs that justify the cost. However, if you’re a larger organization, sales intel could help you go from being neck-to-neck with your biggest competitor to being the industry leader (assuming your competition isn’t using sales intelligence as well 😉)
+                        </p>
+                        <p class="section-content-text">
+                            Moving on!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-white" id="sales-intelligence-marketting-vs-sales">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-8">
+                    <div class="section-content">
+                        <h2>
+                            Marketing Intelligence vs Sales Intelligence
+                        </h2>
+                        <p class="section-content-text">
+                            If you’ve been in the industry for a while now, chances are that you’ve also come across another similar (and on some level, even related) term called ”marketing intelligence”. Here’s a table enlisting the differences between marketing intelligence and sales intelligence.
+                        </p>
+                        <p class="section-content-text">
+                            Sales intelligence, however, isn’t unprocessed data; it’s a collection of data-driven information and contextual insights that are built with the sole intention of helping your organization’s sales force. Let’s take a deeper look at some examples of actionable sales intelligence, how it is calculated, and how it can help your team sell better.
+                        </p>
+                        <div class="conetent-image">
+                            <img class="img-fluid" src="../assets/img/intelligence-vs-sales.svg" alt="organization charts" />
+                        </div>
+                        <p class="section-content-text">
+                            We’ve spent a lot of time talking about what Sales Intelligence is all about and how far it’s come, but where do we see it going from here? These are our predictions for the future of sales intelligence.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-grey" id="sales-intelligence-future">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-8">
+                    <div class="section-content">
+                        <h2>
+                            Future of Sales Intelligence
+                        </h2>
+                        <p class="section-content-text">
+                            The sales intelligence marketing is rapidly expanding, and users are always on the lookout for more reliable and comprehensive information about their target accounts. Over the next 3 to 5 years, sales intelligence products will focus on improving the quality of the information they provide, and greatly focus on capturing and distributing more data points to clients. After that, though, the industry is wide open and the possibilities are endless. 
+                        </p>
+                        <p class="section-content-text">
+                            In a world where AI and predictive analytics are two of the top technologies that companies are invested in, sales intelligence will likely soon include a great deal of AI-assisted personalization that will help sales folks tell their customers exactly what they want to hear to close down sales faster. Bots could also help sales people approach prospects at the most probabilistically opportune moments to improve deal conversion rates. 
+                        </p>
+                        <p class="section-content-text">
+                            Data protection is also a hot topic right now, and companies, especially large firms like FAMGA, are taking privacy seriously. This might, in fact, spawn a new industry that’s focused on guarding sales people’s access to all the data we discussed in this post, and gaining these insights and information might by itself be a new challenge for this industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pre-footer-container">
+            <p>Use Slintel to find relevant, <span>high-intent prospects</span> </p><button type="button" class="btn btn-outline-light btn-float-right">Book A Demo</button>
+            <p class="pre-footer-text">for your business</p>
+        </div>
+    </section>
+    <footer class="container-fluid">
+        <div class="footer-content-left" >
+           SLYNTEL
+        </div>
+        <div class="footer-content-right" >
+            2020 Slintel Inc. All rights reserved.
+         </div>
+    </footer>
+</body>
+</html>
